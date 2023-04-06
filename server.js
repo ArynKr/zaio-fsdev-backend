@@ -36,6 +36,7 @@ if (process.env.NODE_ENV === 'development') {
 /* routes */
 app.get('/api/health-check', (_req, res) => res.send('Health OK'))
 app.use('/api/courses', require('./routes/courses'))
+app.use('/api/courseStructures', require('./routes/courseStructures'))
 
 const server = app.listen(PORT, () => {
   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
