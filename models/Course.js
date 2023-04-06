@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const CourseStructure = require('./CourseStructure');
 
 const CourseSchema = new mongoose.Schema({
   title: {
