@@ -26,6 +26,5 @@ const server = app.listen(PORT, () => {
 /* handled unhandled rejection/error (this error might happen while connecting to DB, etc) */
 process.on('unhandledRejection', err => {
   console.log(`Error: ${err.message}\n‼closing the server‼`)
-  mongoose.connection.close()
   server.close(() => process.exit(1))
 })
