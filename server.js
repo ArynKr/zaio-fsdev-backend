@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 5000
 app.use(express.json())
 
 /* enable CORS */
-const whitelist = []
+const whitelist = ['https://zaio-challenge.netlify.app']
 const corsOptions = {
   origin: function (origin, callback) {
       if (whitelist.indexOf(origin) !== -1) {
