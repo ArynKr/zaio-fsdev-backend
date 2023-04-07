@@ -7,6 +7,9 @@
 - [x] Connect the database with the server
 - [x] Create course Schema
 - [x] Seed the courses into course schema
-- [ ] Create API endpoints for:
-  - [ ] `/courses` Getting course data from backend
-- [ ] Optimize the efficiency using some pre populations
+- [x] Create API endpoints for:
+  - [x] `/courses` Getting course data from backend
+  - [ ] `/courseStructures` Getting course structure from backend
+- [x] Optimize the efficiency using some pre populations
+- [ ] Improve the schema of the course model
+- [ ] Refactor the code 

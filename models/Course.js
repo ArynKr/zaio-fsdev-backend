@@ -2,6 +2,10 @@ const mongoose = require('mongoose');
 const CourseStructure = require('./CourseStructure');
 
 const CourseSchema = new mongoose.Schema({
+  id: {
+    type: Number,
+    required: [true, 'Please add an id'],
+  },
   title: {
     type: String,
     trim: true,
